@@ -1,4 +1,4 @@
-import { PhotoIcon } from '@heroicons/react/24/solid'
+import { PhotoIcon } from "@heroicons/react/24/solid";
 
 function AddProduct() {
   return (
@@ -8,7 +8,10 @@ function AddProduct() {
           <div className="border-b border-gray-900/10">
             <div className="grid grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Product Name
                 </label>
                 <div className="mt-2">
@@ -22,7 +25,10 @@ function AddProduct() {
                 </div>
               </div>
               <div>
-                <label htmlFor="category" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="category"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Category
                 </label>
                 <select
@@ -40,7 +46,10 @@ function AddProduct() {
                 </select>
               </div>
               <div>
-                <label htmlFor="quantity" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="quantity"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Quantity
                 </label>
                 <div className="mt-2">
@@ -54,7 +63,10 @@ function AddProduct() {
                 </div>
               </div>
               <div>
-                <label htmlFor="unit" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="unit"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Unit
                 </label>
                 <select
@@ -69,9 +81,12 @@ function AddProduct() {
                   <option>none</option>
                 </select>
               </div>
-              
+
               <div>
-                <label htmlFor="price" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="price"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Price
                 </label>
                 <div className="relative mt-2 rounded-md shadow-sm">
@@ -87,15 +102,21 @@ function AddProduct() {
                     aria-describedby="price-currency"
                   />
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                    <span className="text-gray-500 sm:text-sm" id="price-currency">
+                    <span
+                      className="text-gray-500 sm:text-sm"
+                      id="price-currency"
+                    >
                       USD
                     </span>
                   </div>
                 </div>
               </div>
-              
+
               <div>
-                <label htmlFor="quantity" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="quantity"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Shelf life in days
                 </label>
                 <div className="mt-2">
@@ -108,9 +129,12 @@ function AddProduct() {
                   />
                 </div>
               </div>
-              </div>
-              <div className="col-span-full">
-              <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">
+            </div>
+            <div className="col-span-full">
+              <label
+                htmlFor="about"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Description
               </label>
               <div className="mt-2">
@@ -119,29 +143,39 @@ function AddProduct() {
                   name="description"
                   rows={3}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  defaultValue={''}
+                  defaultValue={""}
                 />
               </div>
             </div>
-            
           </div>
           <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
-                <div className="text-center">
-                  <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
-                  <div className="mt-4 flex text-sm leading-6 text-gray-600">
-                    <label
-                      htmlFor="file-upload"
-                      className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
-                    >
-                      <span>Upload a photo</span>
-                      <input id="productPic" name="productPic" type="file" className="sr-only" />
-                    </label>
-                    <p className="pl-1">or drag and drop</p>
-                  </div>
-                </div>
+            <div className="text-center">
+              <PhotoIcon
+                className="mx-auto h-12 w-12 text-gray-300"
+                aria-hidden="true"
+              />
+              <div className="mt-4 flex text-sm leading-6 text-gray-600">
+                <label
+                  htmlFor="file-upload"
+                  className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
+                >
+                  <span>Upload a photo</span>
+                  <input
+                    id="productPic"
+                    name="productPic"
+                    type="file"
+                    className="sr-only"
+                  />
+                </label>
+                <p className="pl-1">or drag and drop</p>
               </div>
+            </div>
+          </div>
           <div className="mt-6 mb-20 flex items-center justify-end gap-x-6">
-            <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
+            <button
+              type="button"
+              className="text-sm font-semibold leading-6 text-gray-900"
+            >
               Cancel
             </button>
             <button

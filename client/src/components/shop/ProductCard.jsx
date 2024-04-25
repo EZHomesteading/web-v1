@@ -7,10 +7,17 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-
-export default function ProductCard({ productName, price, description, imageUrl, shelfLife, stock, quantityType }) {
+//
+export default function ProductCard({
+  productName,
+  price,
+  description,
+  imageUrl,
+  shelfLife,
+  stock,
+  quantityType,
+}) {
   return (
-    
     <Card className="w-7/8 mb-2.5 mx-2 flex lg:w-96 md:w-82 sm:w-70">
       <CardHeader shadow={false} floated={false} className="h-48 lg:h-48">
         <img
@@ -47,7 +54,7 @@ export default function ProductCard({ productName, price, description, imageUrl,
           color="gray"
           className="font-normal opacity-75"
         >
-          {stock} {quantityType} 
+          {stock} {quantityType}
         </Typography>
       </CardBody>
       <CardFooter className=" flex space-center">
